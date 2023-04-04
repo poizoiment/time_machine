@@ -1,0 +1,53 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.splashscreen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: lightgrey;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.splashscreen img {
+    height: 500px;
+    width: 500px;
+    margin-left: calc(50% - 500px / 2);
+    margin-top: 100px;
+}
+
+.splashscreen h4 {
+    text-align: center;
+}
+
+.brain-logo {
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+}
+
+.form-contact {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.titul-letter {
+    font-size: 2em;
+    color: red;
+}
+
+.main-page-background {
+    background-image: url("wwweb.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 3000px rgba(255, 255, 255, 0.7);
+}

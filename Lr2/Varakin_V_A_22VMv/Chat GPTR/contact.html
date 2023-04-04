@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <metadata chatset="utf-8"></metadata>
+    <!-- my links -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!-- "defer" here is for loading script then DOM is ready-->
+    <script src="script.js" defer></script>
+    <!-- For Bootstrap -->
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+      crossorigin="anonymous"
+    >
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body style="background-color: rgb(238, 238, 238);">
+    <header class="p-3 mb-3 border-bottom bg-white">
+      <!-- TODO change contents -->
+      <div class="container">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+        >
+          <ul
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li><img src=brain_logo.png class="brain-logo"></li>
+            <li>
+              <a href="index.html" class="nav-link px-2 link-secondary">Chat GPTR</a>
+            </li>
+            <li><a href="about.html" class="nav-link px-2 link-dark">About<a></li>
+            <li><a href="contact.html" class="nav-link px-2 link-dark">Reach us</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="text-center">
+        <div class="container">
+
+        <h3 class="mb-5">Contact us</h3>
+      
+        <div class="row">
+          <div class="col-lg-5">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af207ce2fb62f58806533d1528f5a7a9bcc4eddb194c16ba501260b676a261b26&amp;source=constructor"
+                class="h-100 w-100" frameborder="0">
+            </iframe>
+          </div>
+      
+          <div class="col-lg-7">
+            <form class="form-contact">
+              <div class="row">
+                <div class="col-md-9">
+                  <div class="row mb-4">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                      <div class="form-outline">
+                        <input type="text" id="form1" class="form-control" />
+                        <label class="form-label" for="form1">First name</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-outline">
+                        <input type="email" id="form2" class="form-control" />
+                        <label class="form-label" for="form2">Email Address</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-outline mb-4">
+                    <input type="text" id="form3" class="form-control" />
+                    <label class="form-label" for="form3">Subject</label>
+                  </div>
+                  <div class="form-outline mb-4">
+                    <textarea class="form-control" id="form4" rows="4"></textarea>
+                    <label class="form-label" for="form4">Message</label>
+                  </div>
+                  <div class="text-center text-md-start">
+                    <button type="submit" class="btn btn-primary mb-5 mb-md-0">
+                      Send
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <ul class="list-unstyled">
+                    <li>
+                      <p><small>603000, Nighny Novgorod, Minina st., 24k1</small></p>
+                    </li>
+                    <li>
+                      <p><small>+7 907 010 25 25</small></p>
+                    </li>
+                    <li>
+                      <p><small>contact@gmail.com</small></p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      </section>
+    </main>
+  </body>
+</html>
