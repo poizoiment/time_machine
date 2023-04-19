@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <metadata chatset="utf-8"></metadata>
+    <!-- my links -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!-- "defer" here is for loading script then DOM is ready-->
+    <script src="script.js" defer></script>
+    <!-- For Bootstrap -->
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+      crossorigin="anonymous"
+    >
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="main-page-background">
+    <div class="main-page-white-layer">
+    <div class="splashscreen" id="splashscreen" hidden="true">
+      <img src="gears.gif">
+      <h4>Please wait until response is fabricated...</h4>
+    </div>
+    <header class="p-3 mb-3 border-bottom bg-white">
+      <div class="container">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+        >
+          <ul
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+          >
+          <li><img src=brain_logo.png class="brain-logo"></li>
+            <li>
+              <a href="index.html" class="nav-link px-2 link-secondary">Chat GPTR</a>
+            </li>
+            <li><a href="about.html" class="nav-link px-2 link-dark">About<a></li>
+            <li><a href="contact.html" class="nav-link px-2 link-dark">Reach us</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container" style="padding-top: 20px;">
+        <h4>Answer field</h4>
+          <textarea class="form-control bg-white" aria-label="With textarea" rows="5" disabled id="output"></textarea>
+      </div>
+      <div class="container" style="padding-top: 30px;">
+        <h4>Question field</h4>
+        <div class="input-group">
+          <textarea class="form-control" aria-label="With textarea" autofocus id="input"></textarea>
+          <button type="button" class="btn btn-light col-2 col-xl-1">
+            Enter
+          </button>
+        </div>
+      </div>
+      <div class="container" style="padding-top: 30px;">
+        <div class="row">
+          <div class="form-floating mb-3 col-xl-4 col-sm-6">
+            <input type="range" class="form-range form-control bg-white" min="0" max="1" step="0.1" id="temperature" value="0.4">
+            <label for="temperature">Temperature, or "measure of creativeness": <span id="temp-out"></span></label>
+          </div>
+          <div class="form-floating mb-3 col-xl-4 col-sm-6">
+            <input class="form-control" id="tokens" type="number" min="0" max="5120" step="1" value="128">
+            <label for="tokens">Max tokens (word is about 3 tokens):</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    </main>
+  </body>
+</html>
