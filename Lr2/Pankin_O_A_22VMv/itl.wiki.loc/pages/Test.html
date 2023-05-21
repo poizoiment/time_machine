@@ -1,0 +1,191 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Test</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Заголовок 1 Знак";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:24.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.1
+	{mso-style-name:"Заголовок 1 Знак";
+	mso-style-link:"Заголовок 1";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=RU>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;background:#3273DC'><b><span
+style='font-size:48.0pt;font-family:"Segoe UI",sans-serif;color:white'>ЖЕЛЕЗО
+СЕРВЕРОВ – ПРОБЛЕМЫ С ПРОИЗВОДИТЕЛЬНОСТЬЮ</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;line-height:150%;background:
+white'><span style='font-size:12.0pt;line-height:150%;font-family:"Segoe UI",sans-serif;
+color:#4A4A4A'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:70.9pt;text-indent:-42.55pt;line-height:150%;background:white'><span
+style='font-size:28.0pt;line-height:150%;font-family:"Times New Roman",serif;
+color:#4A4A4A'>Порядок действий при получении заявки о проблемах со скоростью
+работы серверов:</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:70.9pt;margin-bottom:.0001pt;text-indent:35.45pt;line-height:150%;
+background:white'><span style='font-size:28.0pt;line-height:150%;font-family:
+"Times New Roman",serif;color:#4A4A4A'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:28.0pt;line-height:150%;font-family:"Times New Roman",serif;
+color:#4A4A4A'>Уточняем у пользователя, какой именно сервер, какие операции
+стали работать медленнее, и когда это началось.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:70.9pt;margin-bottom:.0001pt;text-indent:35.45pt;line-height:150%;
+background:white'><span style='font-size:28.0pt;line-height:150%;font-family:
+"Times New Roman",serif;color:#4A4A4A'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:28.0pt;line-height:150%;font-family:"Times New Roman",serif;
+color:#4A4A4A'>Проверяем, есть ли сервер в нашем zabbix (zabbix – мониторинг –
+последние данные – ). Если есть, смотрим на историю загрузки процессора по
+счётчику “Processor load (1 min average), percentage”<br>
+Если средняя нагрузка в рабочее время более 60-70%, то ресурсов процессора не
+хватает.<br>
+Если он виртуальный, то, возможно, удастся увеличить количество ресурсов
+виртуальной машины. Передаём заявку на 3 линию с целью изучить ИС и принять
+решение о допустимости этого (не распределены ли остальные ресурсы, есть ли ещё
+на хосте и т.п.).</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:70.9pt;margin-bottom:.0001pt;text-indent:35.45pt;line-height:150%;
+background:white'><span style='font-size:28.0pt;line-height:150%;font-family:
+"Times New Roman",serif;color:#4A4A4A'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:28.0pt;line-height:150%;font-family:"Times New Roman",serif;
+color:#4A4A4A'>Смотрим в RAID-консоль (hp smart storage, intel rapid storage, )
+– всё ли ок с дисками и массивами?</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:70.9pt;margin-bottom:.0001pt;text-indent:35.45pt;line-height:150%;
+background:white'><span style='font-size:10.0pt;line-height:150%;font-family:
+Symbol;color:#4A4A4A'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:28.0pt;line-height:150%;font-family:"Times New Roman",serif;
+color:#4A4A4A'>Если нет, то списываем серийник вышедшего из строя диска,
+сообщаем клиенту что он требует замены, и что передашь заявку на продажу (если
+оставлять закупку на клиенте, то чаще всего они этому не придают достаточной
+важности и покупают очень долго. Если клиент настаивает на том что купит сам –
+эскалируем нашу заявку IT-менеджеру).</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:70.9pt;margin-bottom:.0001pt;text-indent:35.45pt;line-height:150%;
+background:white'><span style='font-size:10.0pt;line-height:150%;font-family:
+Symbol;color:#4A4A4A'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:28.0pt;line-height:150%;font-family:"Times New Roman",serif;
+color:#4A4A4A'>Проверяем наличие актуальных бэкапов с того массива, который под
+угрозой. Если их нет – эскалируем заявку на 3 линию с целью их настройки.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:70.9pt;margin-bottom:.0001pt;text-indent:35.45pt;line-height:150%;
+background:white'><span style='font-size:28.0pt;line-height:150%;font-family:
+"Times New Roman",serif;color:#4A4A4A'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:28.0pt;line-height:150%;font-family:"Times New Roman",serif;
+color:#4A4A4A'>Диспетчер задач и монитор ресурсов (win+r -&gt; resmon.exe)<br>
+Заходим в диспетчер во время рабочего дня (в период нагрузок) и оцениваем
+текущую нагрузку. Нормальные показатели:</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:70.9pt;margin-bottom:.0001pt;text-indent:35.45pt;line-height:150%;
+background:white'><span style='font-size:10.0pt;line-height:150%;font-family:
+Symbol;color:#4A4A4A'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:28.0pt;line-height:150%;font-family:"Times New Roman",serif;
+color:#4A4A4A'>средняя нагрузка на процессор не более, чем 60-70%</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:70.9pt;margin-bottom:.0001pt;text-indent:35.45pt;line-height:150%;
+background:white'><span style='font-size:10.0pt;line-height:150%;font-family:
+Symbol;color:#4A4A4A'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:28.0pt;line-height:150%;font-family:"Times New Roman",serif;
+color:#4A4A4A'>ОЗУ загружена не более, чем на 90% (при этом свободно не менее
+3-4 Гб)</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:70.9pt;margin-bottom:.0001pt;text-indent:35.45pt;line-height:150%;
+background:white'><span style='font-size:10.0pt;line-height:150%;font-family:
+Symbol;color:#4A4A4A'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:28.0pt;line-height:150%;font-family:"Times New Roman",serif;
+color:#4A4A4A'>очередь дисков не более единицы</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:70.9pt;margin-bottom:.0001pt;text-indent:35.45pt;line-height:150%;
+background:white'><span style='font-size:28.0pt;line-height:150%;font-family:
+"Times New Roman",serif;color:#4A4A4A'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:28.0pt;line-height:150%;font-family:"Times New Roman",serif;
+color:#4A4A4A'>Если это терминальный сервер, то смотрим список сеансов и звоним
+2 другим пользователям чтобы узнать, стал ли сервер работать медленнее
+обычного.<br>
+Были случаи, когда заявки оставляли новые пользователи, которые считали такую скорость
+работы низкой, тогда как скорость была стандартной и адекватной железу.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:70.9pt;margin-bottom:.0001pt;text-indent:35.45pt;line-height:150%;
+background:white'><span style='font-size:28.0pt;line-height:150%;font-family:
+"Times New Roman",serif;color:#4A4A4A'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:28.0pt;line-height:150%;font-family:"Times New Roman",serif;
+color:#4A4A4A'>Если тормоза в 1с, то смотри статью /сюда ссылку на статью по
+тормозам 1С/</span></p>
+
+<p class=MsoNormal style='margin-left:70.9pt;text-indent:35.45pt;line-height:
+150%'>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
