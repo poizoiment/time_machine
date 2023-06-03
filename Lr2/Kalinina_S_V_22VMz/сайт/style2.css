@@ -1,0 +1,117 @@
+body {
+    min-width: 1025px;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    height: 75px;
+    padding: 0 10%;
+    background-color: rgb(255, 255, 255);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 75px;
+}
+
+
+nav ul {
+
+    list-style-type: none;
+    color: black;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px 30px;
+}
+
+nav a:link {
+    color:black;
+    text-decoration: none;
+}
+
+nav a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+nav a.button {
+    color: white;
+    background-color: #4c78b3;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+nav a.button:hover {
+    background-color: #5484c4;
+}
+
+main {
+    height: 85vh;
+    background-color: #f1f1f1;
+    padding: 0 10% 10px;
+    margin: 0;
+    background-image: url(images/thank\ you!.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-attachment: local;
+    background-position: center;
+}
+
+h1 {
+    padding: 10px;
+}
+
+form {
+    width: 230px;
+    background-color: white;
+    padding: 20px;
+    border:#4c78b3 solid;
+    border-width: 5px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input {
+    font-size: large;
+}
+
+select {
+    font-size: large;
+}
+
+a.button {
+    font-size: large;
+    text-decoration: none;
+    background-color: #4c78b3;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a.button:hover {
+    background-color: #5784be;
+}
+
+p.thanks {
+    font-weight: bold;
+    font-size: 8vh;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 10%;
+    color: white;
+    background-color: rgb(44, 44, 44)
+}
