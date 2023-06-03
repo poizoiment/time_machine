@@ -1,0 +1,121 @@
+header{
+    width: auto;
+    height: 100vh;
+    background-image: url(img/baikal.jpg);
+    background-size: cover;
+}
+html{
+    scroll-behavior: smooth; 
+}
+body{
+margin: 0;
+}
+header h1{
+    font-size: 100px;
+    margin-top: 0;
+}
+header div{
+    width: 50%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 10vh;
+    padding-left: 45vw;
+}
+aside{
+    width: auto;
+    height: 100vh;
+   background-color: rgba(128, 128, 128, 0.523)
+}
+.enimal div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:flex-start;
+}
+.enimal figure{
+    width: 40%;
+}
+.enimal img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.enimal{
+    background-color: rgb(148 174 175);
+    padding-top: 50px;
+}
+.enimal h1{
+    margin-top: 0%;
+    text-align: center;
+    font-size: 50px;
+}
+.enimal li{
+    margin-bottom: 10px;
+}
+.flora div{
+    display: flex;
+    justify-content: center;
+}
+.flora a{
+    color: black;
+    font-weight: 900;
+}
+.flora div figure{
+    width: 35vw;
+}
+.flora figure img{
+    width: 35vw;
+    height: 35vw;
+    object-fit: cover;
+}
+.flora h1{
+  text-align: center;
+  margin-top: 0%;
+  font-size: 50px
+} 
+.flora{
+    background: linear-gradient(rgb(148 174 175),rgb(0, 0, 0));
+    padding-bottom: 40px;
+}
+.flora aside img{
+    width: 10vw;
+    height: 10vw;
+    margin-right: 45px;
+}
+.flora aside{
+    margin-left: 50%;
+    margin-top: -100px;
+    height: min-content;
+    background-color: transparent;
+}
+.flora figure h1{
+    font-size: 7vw;
+    text-align: left;
+    color:  rgb(255, 255, 255);
+}
+footer{
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(79, 79, 79);
+    color: white;
+}
+footer a{
+    margin: 5px 10px;
+}
+nav{
+    padding: 20px 0;
+    background-color: rgba(169, 169, 169, 0.664);
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* https://wikiway.com/russia/ozero-baykal/ */
+/* https://nicepage.com/ru/website-templates/preview/izuchenie-dikoy-prirody-i-prirody-78518?device=desktop */
